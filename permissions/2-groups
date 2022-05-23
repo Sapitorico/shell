@@ -1,2 +1,2 @@
 #!/bin/bash
-groups userName
+getent group userNamee
