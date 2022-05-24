@@ -1,0 +1,2 @@
+#!/bin/bash
+mkdiri -p my_dir/premissions/; chmod 751 my_dir
