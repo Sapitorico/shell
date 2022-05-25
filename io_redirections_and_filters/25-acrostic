@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 | paste -c -d""
+cut -c1 | paste -1 -3 ""
