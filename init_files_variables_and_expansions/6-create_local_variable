@@ -1,2 +1,2 @@
-#!/bin/push
-BEST="School"
+#!/bin/bash
+BEST='School'
