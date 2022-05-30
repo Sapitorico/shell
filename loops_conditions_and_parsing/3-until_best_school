@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#banan!!
 i=1
 until (( $i == 10 ))
 do
