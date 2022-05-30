@@ -3,6 +3,6 @@
 i="/etc/passwd"
 while IFS=. read -r u g h c U P US
 do
-	echo "The user $u is part of the $g gang, lives in $h and rides $c, $U's place is protected by the passcode $P, more info about the user here: $US"
+	echo "The user $u is part of the $g gang, lives in $h and rides $c. $U's place is protected by the passcode $P, more info about the user here: $US"
 	
 done < "$i"
