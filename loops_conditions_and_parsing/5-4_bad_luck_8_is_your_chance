@@ -12,5 +12,5 @@ do
 									    else
 										            echo "Best School"
 											        fi
-												    let y+=1
-											    done
+												(( y+=1 ))
+											done
