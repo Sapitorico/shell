@@ -2,7 +2,7 @@
 #platanos
 for (( n=1; i < 100; i++ ))
 do
-    if (( n % 15 == 0 )); then
+    if (( n % 5 == 0 )); then
 	echo "FizzBuzz"
     elif (( n % 3 == 0 )); then
 	echo "Fizz"
