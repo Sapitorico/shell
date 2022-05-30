@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#sapito
+i=0
+while [ "$i" -le 12 ]
+do
+    echo "Hour: "$i
+    (( i+=1 ))
+
+ x=1
+    while [ "$x" -le 59 ]
+    do
+	echo "$x"
+	(( x+=1 ))
+    done
+done
