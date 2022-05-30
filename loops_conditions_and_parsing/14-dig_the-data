@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-awk '{print $1,$9}' pache-access.log | sort |
+awk '{print $1,$9}' pache-access.log | sort | uniq -c | sort
