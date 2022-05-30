@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#palet
+ps | awk '{print $1}'
+ apache-access.log
