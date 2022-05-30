@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#hola
+y=1
+while [ $y -lt 11 ]
+do
+	    if [ $y = 4 ]
+		        then
+				        echo "bad luck"
+					    elif [ $y = 8 ]
+						        then
+								        echo "good luck"
+									    else
+										            echo "Best School"
+											        fi
+												    let y+=1
+											    done
