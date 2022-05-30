@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #banan!!
 i=0
-until (( $i == 10 ))
+until (( i == 10 ))
 do
     echo "Best School";
     ((i++))
