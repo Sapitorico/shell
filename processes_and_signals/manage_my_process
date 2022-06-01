@@ -3,6 +3,6 @@
 f=/tmp/my_process
 while true,
 do
-	echo I am alive! >> $f
+sudo bash -c 'echo "I am alive!" >> $f'
 	sleep 2
 done
