@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #wadq
-echo -a bash "PIP of this script: $$"
+ps -faux | grep -a bash
 # shellcheck disable=SC2009
