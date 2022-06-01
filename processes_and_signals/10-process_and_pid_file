@@ -12,6 +12,6 @@ while true;
 do
 	 echo To infinity and beyond
 	         sleep 2
-	trap 'sudo rm /var/run/myscript.pid; pollo' SIGQUIT
-done
+	trap 'pollo' SIGQUIT || SIGTERM
+	done
 
