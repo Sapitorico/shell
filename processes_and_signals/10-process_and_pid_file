@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #hola
-sudo bash -c echo $$ > /var/run/myscript.pid
+f=/var/run/myscript.pid
+echo $$ >> /var/run/myscript.pid
 while true; 
 do
 	 echo To infinity and beyond
