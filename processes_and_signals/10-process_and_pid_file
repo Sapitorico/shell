@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #hola
 sudo bash -c echo $$ > /var/run/myscript.pid
-while ((1)) true 
+while true; 
 do
 	 echo To infinity and beyond
 	         sleep 2
