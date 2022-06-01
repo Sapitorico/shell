@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 #hola
-{
 sudo touch /var/run/myscript.pid
-}
 echo $$ >> /var/run/myscript.pid
 while true ; do
 	trap "echo I hate the kill command" 15
-	trap "echo Y U no love me?!" 9
+	trap "echo Y U no love me?!" 2
 	echo To infinity and beyond
 	sleep 2
-	trap "sudo rm /var/run/myscript.pid"
+	trap "sudo rm /var/run/myscript.pid" -3
 done
 
