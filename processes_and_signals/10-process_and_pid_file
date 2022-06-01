@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 #hola
 f=/var/run/myscript.pid
-echo $$ >> /var/run/myscript.pid
+function pollo(){
+	rm /var/run/myscript.pid 
+	exit
+}
+echo $$ >> $f
+trap 'echo "I hate the kill command";pollo' SIGTERM
+trap 'echo "Y U love me?!";pollo' SIGINT
 while true; 
 do
 	 echo To infinity and beyond
 	         sleep 2
-	trap 'echo "I hate the kill command"; sudo rm /var/run/myscript.pid; exit' SIGTERM 
-	trap 'echo "Y U no love me?!"' SIGINT
 	trap 'sudo rm /var/run/myscript.pid; exit' SIGQUIT
 done
 
