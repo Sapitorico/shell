@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #wadq
-echo "PID of this script: $$"
+echo "PID of this script: $bash"
 # shellcheck disable=SC2009
