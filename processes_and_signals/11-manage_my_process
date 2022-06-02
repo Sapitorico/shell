@@ -1,2 +1,13 @@
 #!/usr/bin/env bash
 #hola
+p=/var/run/my_process.pid
+if 
+function star()
+echo $$ >>$p
+
+}
+function stop(){
+	sudo kill -15 $(cat "$p") && rm -f "$p"
+}
+then ./ 
+
