@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #hello
-f=/tmp/my_process
 while true,
 do
-sudo bash -c 'echo "I am alive!" >> $f'
+sudo bash -c "echo "I am alive!" >> /tmp/my_process"
 	sleep 2
 done
