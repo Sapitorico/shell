@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #hola
-p=/var/run/my_process.pid
-if 
+p=/var/run/my_process.pid 
 function star(){
 	./manage_my_process &
 echo "$!" >>$p
