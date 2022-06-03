@@ -1,23 +1,21 @@
 #!/usr/bin/env bash
 #hola
 p=/var/run/my_process.pid 
-function star(){
+if [ "${1}" == "star"]
+then
 	./manage_my_process &
-echo "$!" >>$p
+echo "$$" >>$p
 echo "manage_my_process started"
-
-}
-function stop(){
-	sudo kill $(cat "$p") & rm -f "$p"
+elif [ "${1}" == "stop" ]
+then
+	 kill $(cat "$p") & rm -f "$p"
 	echo "manage_my_process stopped"
-}
-function restart(){
-	sudo kill $(cat "$p") & rm -f "p"
+elif [ "${1}" == "restart" ]
+then
+	kill $(cat "$p") & rm -f "p"
 	./manage_my_process &
 	echo "$!" > $p
 	echo "manage_my_process restarted"
-}
-while true;
-do
-	echo " Usage: manage_my_process {start|stop|restart}"
-done
+else
+	Usage: manage_my_process {start|stop|restart}
+fi
