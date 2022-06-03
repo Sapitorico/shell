@@ -3,19 +3,19 @@
 p=/var/run/my_process.pid 
 if [ "${1}" == "start" ]
 then
-./manage_my_process &&
-echo "$!" > $p
-echo "manage_my_process started"
+./manage_my_process &
+-c echo "$!" > $p
+sudo bash -c echo "manage_my_process started"
 elif [ "${1}" == "stop" ]
 then
 sudo kill -15 "$(cat "$p")" && rm -f "$p"
-echo "manage_my_process stopped"
+sudo bash -c  echo "manage_my_process stopped"
 elif [ "${1}" == "restart" ]
 then
 sudo kill -9 "$(cat "$p")" && rm -f "$p"
 	./manage_my_process &
 	echo "$!" > $p
-	echo "manage_my_process restarted"
+	sudo bash -c echo "manage_my_process restarted"
 else
 	echo "Usage: manage_my_process {start|stop|restart}"
 fi
