@@ -14,6 +14,7 @@ elif [ "${1}" == "restart" ]
 then
 	sudo kill -15 "$(cat "/var/run/my_process.pid")" && rm -f "/var/run/my_process.pid"
 	./manage_my_process &
+	touch "/var/run/my_process.pid"
 	echo "$!" > "/var/run/my_process.pid"
 	echo "manage_my_process restarted"
 else
