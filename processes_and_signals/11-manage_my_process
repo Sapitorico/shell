@@ -2,12 +2,23 @@
 #hola
 p=/var/run/my_process.pid
 if 
-function star()
-echo $$ >>$p
+function star(){
+	./manage_my_process &
+echo "$!" >>$p
+echo "manage_my_process started"
 
 }
 function stop(){
-	sudo kill -15 $(cat "$p") && rm -f "$p"
+	sudo kill $(cat "$p") & rm -f "$p"
+	echo "manage_my_process stopped"
 }
-then ./ 
-
+function restart(){
+	sudo kill $(cat "$p") & rm -f "p"
+	./manage_my_process &
+	echo "$!" > $p
+	echo "manage_my_process restarted"
+}
+while true;
+do
+	echo " Usage: manage_my_process {start|stop|restart}"
+done
