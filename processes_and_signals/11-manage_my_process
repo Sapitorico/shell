@@ -12,7 +12,7 @@ then
 sudo kill -15 "$(cat "$p")" && rm -f "$p"
 elif [ "${1}" == "restart" ]
 then
-	kill $(cat "$p") & rm -f "p"
+sudo kill -15 $(cat "$p") & rm -f "$p"
 	./manage_my_process &
 	echo "$!" > $p
 	echo "manage_my_process restarted"
