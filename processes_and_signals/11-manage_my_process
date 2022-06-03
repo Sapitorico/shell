@@ -9,7 +9,7 @@ echo "manage_my_process started"
 elif [ "${1}" == "stop" ]
 then
 	echo "manage_my_process stopped"
-	 kill $(cat "$p") && rm -f "$p"
+sudo kill -15 "$(cat "$p")" && rm -f "$p"
 elif [ "${1}" == "restart" ]
 then
 	kill $(cat "$p") & rm -f "p"
