@@ -4,7 +4,7 @@ p=/var/run/my_process.pid
 if [ "${1}" == "start" ]
 then
 ./manage_my_process &
--c echo "$!" > $p
+ echo "$!" > $p
  echo "manage_my_process started"
 elif [ "${1}" == "stop" ]
 then
