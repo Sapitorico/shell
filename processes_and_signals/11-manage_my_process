@@ -17,5 +17,5 @@ sudo kill -9 "$(cat "$p")" && rm -f "$p"
 	echo "$!" > $p
 	echo "manage_my_process restarted"
 else
-	echo "Usase: manage_my_process {start|stop|restart}"
+	echo "Usage: manage_my_process {start|stop|restart}"
 fi
