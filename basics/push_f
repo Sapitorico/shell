@@ -1,0 +1,6 @@
+#!/bin/bash
+read -p 'file_name: ' F
+git add "$F"
+read -p 'message: ' M
+git commit - "$M"
+git push
