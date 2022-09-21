@@ -1,2 +1,1 @@
-# holbertonschool-shell
-first working repo
+# Shell, basics
