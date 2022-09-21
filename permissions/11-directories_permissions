@@ -1,2 +1,2 @@
 #!/bin/bash
-chod a+x ./*/
+chmod a+x ./*/
