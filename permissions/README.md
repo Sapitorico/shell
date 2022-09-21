@@ -14,4 +14,31 @@ Each file and directory is assigned access rights for the file owner, the relate
 **ls -l shows permissions properties**
 
 # As represented
-![img](https://translate.google.com/website?sl=en&tl=es&hl=es&client=webapp&u=http://linuxcommand.org/images/file_permissions.png) 
+![img](https://translate.google.com/website?sl=en&tl=es&hl=es&client=webapp&u=http://linuxcommand.org/images/file_permissions.png)
+### chmod
+specify the desired permission settings and the file to modify.
+
+    rwx rwx rwx = 111 111 111
+    rw-rw-rw- = 110 110 110
+    rwx --- --- = 111 000 000
+    
+    y así...
+    
+    rwx = 111 en binario = 7
+    rw- = 110 en binario = 6
+    rx = 101 en binario = 5
+    r-- = 100 en binario = 4### Features
+# man or help:
+
+* chmod
+* sudo
+* su
+* chown
+* chgrp
+* id
+* groups
+* whoami
+* adduser
+* useradd
+* addgroup
+ 
