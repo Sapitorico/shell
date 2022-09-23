@@ -79,3 +79,29 @@ Write a script that counts the number of directories and sub-directories in the 
 The current and parent directories should not be taken into account
 Hidden directories should be counted
 `type [<drive>:][<path>]<filename>`
+`find . -type d ! -path . | wc -l`
+**find** - search for files in a directory hierarchy
+**path:** is the address of a file or directory in a file system (i.e., the hierarchy of directories and files used to organize the information stored on a computer). A relative path is an address relative to the current directory (i.e., the directory in which a user is currently working). An absolute path (also called a full path) is an address relative to the root directory (i.e., the directory at the top of the file system and containing all other directories and files).
+### 12. What’s new
+Create a script that displays the 10 newest files in the current directory.
+
+Requirements:
+
+One file per line
+Sorted from the newest to the oldest
+`ls -1t | head -10`
+**ls** - list directory contents
+**-t** sort by time, newest first; see --time
+### 13. Being unique is better than being perfect
+Create a script that takes a list of words as input and prints only words that appear exactly once.
+
+Input format: One line, one word
+Output format: One line, one word
+Words should be sorted
+`sort | uniq -u`: Sort without argument requests that the input sort and channel to single printing single words
+**sort* - sort lines of text files
+**uniq**- report or omit repeated lines
+**-u**, **--unique** only print unique lines
+### 14. It must be in that file
+Display lines containing the pattern “root” from the file /etc/passwd
+grep "root" /etc/passwd
