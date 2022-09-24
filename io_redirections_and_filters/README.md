@@ -186,3 +186,18 @@ Write a script that parses web servers logs in TSV format as input and displays 
 
 Order by number of requests, most active host or IP at the top
 You are not allowed to use grep, egrep, fgrep or rgrep
+### 26. The biggest fan
+Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+
+Order by number of requests, most active host or IP at the top
+You are not allowed to use grep, egrep, fgrep or rgrep
+`tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -11 | tr -s ' ' | cut -d' ' -f3`
+logname time is a register for in 
+-n +K, omit the first line n - K from the first and list all remaining lines(tamaño total del archivo).
+cut -f1 colum host and lognames
+sort write the ordered concatenation of all FILES to the standard output.
+uniq -c  sorting lines of text files only prints single lines
+sort -nr sort lines of text files, compare according to byte size and invert the result of the comparisons
+head -11 generates the first 11 
+tr -s ' ' delete characters each sequence of a repeated character
+cut -d' ' -f3  removes and delimits spaces from field 3, the file identifier, usually the first one available, therefore 3.
