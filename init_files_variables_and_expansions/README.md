@@ -87,7 +87,7 @@ Write a script that converts a number from base 2 to base 10.
 The number in base 2 is stored in the environment variable BINARY
 The script should display the number in base 10, followed by a new line
 
-`echo $((2#BINARY))`
+`echo $((2#$BINARY))`
 change of base from binary to decimals
 BINARY=10100111001
 1 x 2^0 = 1 x 1 = 1
