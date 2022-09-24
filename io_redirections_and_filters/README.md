@@ -14,7 +14,22 @@ by default standard input gets its contents from the keyboard, but like standard
 **sort < file.txt**
 
 we use sort command to process the contents of file.txt, the results are displayed on the screen as the standard output is not redirected, we can redirect the standard output to another file like this 
+**|** Pipe — send the output from one command to the input of another command. This is a method of chaining commands together. Example: echo "Hello beautiful." | grep -o beautiful.
+man or help:
 
+* echo
+* cat
+* head
+* tail
+* find
+* wc
+* sort
+* uniq
+* grep
+* tr
+* rev
+* cut
+* passwd (5) (i.e. man 5 passwd)
 # Tasks
 ### 0. Hello World
 Write a script that prints “Hello, World”, followed by a new line to the standard output.
@@ -179,19 +194,17 @@ Create a script that decodes acrostics that use the first letter of each line.
 
 The ‘decoded’ message has to end with a new line
 You are not allowed to use grep, egrep, fgrep or rgrep
-`cut -c 1 | paste -s -d ''`
-**-c, --characters=LIST** select only these characters, **-c**merge lines of files **-s** paste one file at a time and **-d ** reuse characters from LIST instead of TABs
+`cut -c 1 | paste -sd ''`
+**-c, --characters=LIST** select only these characters, **-c**merge lines of files by character ranges **-s** paste one file at a time and **-d ** reuse characters from LIST instead of TABs
 ### 26. The biggest fan
 Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 
 Order by number of requests, most active host or IP at the top
 You are not allowed to use grep, egrep, fgrep or rgrep
-### 26. The biggest fan
-Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+data base nasa_19950801.ts : https://s3.amazonaws.com/alx-intranet.hbtn.io/public/nasa_19950801.tsv
 
-Order by number of requests, most active host or IP at the top
-You are not allowed to use grep, egrep, fgrep or rgrep
 `tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -11 | tr -s ' ' | cut -d' ' -f3`
+
 logname time is a register for in 
 -n +K, omit the first line n - K from the first and list all remaining lines(tamaño total del archivo).
 cut -f1 colum host and lognames
