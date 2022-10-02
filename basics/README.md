@@ -1,6 +1,22 @@
 #  Shell, basics
 
 # Requirements
+man or help:
+
+* cd
+* ls
+* pwd
+* less
+* file
+* ln
+* cp
+* mv
+* rm
+* mkdir
+* type
+* which
+* help
+* man
 ## General
 Allowed editors: vi, vim, emacs
 All your scripts will be tested on Ubuntu 20.04 LTS
