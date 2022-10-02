@@ -1,5 +1,19 @@
 # Shell, permissions
-Multitasking and multiuser, meaning that more than one user can be operating the computer at the same time, to protect the users from each other, a series of permissions were created and managed by the following commands 
+Multitasking and multiuser, meaning that more than one user can be operating the computer at the same time, to protect the users from each other, a series of permissions were created and managed by the following commands
+## Resources
+man or help:
+
+* chmod
+* sudo
+* su
+* chown
+* chgrp
+* id
+* groups
+* whoami
+* adduser
+* useradd
+* addgroup 
 ## comands
 
 | commands           | description                                                               |
