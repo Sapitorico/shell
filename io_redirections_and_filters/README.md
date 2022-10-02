@@ -16,6 +16,7 @@ by default standard input gets its contents from the keyboard, but like standard
 we use sort command to process the contents of file.txt, the results are displayed on the screen as the standard output is not redirected, we can redirect the standard output to another file like this
  
 **|** Pipe — send the output from one command to the input of another command. This is a method of chaining commands together. Example: echo "Hello beautiful." | grep -o beautiful.
+### Resources
 man or help:
 
 * echo
